@@ -12,11 +12,11 @@ import UIKit
 class TabBarController:  UITabBarController, UITabBarControllerDelegate {
     
     var homeNavigationController: BaseNavigationController!
-    var homeViewController: HomeViewController!
+    var shopViewController: HomeViewController!
     var discoverViewController: DiscoverViewController!
     var mediaViewController: MediaViewController!
-    var inboxViewController: InboxViewController!
-    var profileViewController: ProfileViewController!
+    var forYouViewController: InboxViewController!
+    var cartViewController: ProfileViewController!
 
     
     //MARK: - LifeCycles
@@ -24,45 +24,30 @@ class TabBarController:  UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
         self.delegate = self
         
-        tabBar.barTintColor = .black
+        tabBar.barTintColor = .white
         tabBar.isTranslucent = false
-        tabBar.unselectedItemTintColor = .gray
-        tabBar.tintColor = .white
+        tabBar.tintColor = .orange
         
-        homeViewController = HomeViewController()
-        homeNavigationController = BaseNavigationController(rootViewController: homeViewController)
-        discoverViewController = DiscoverViewController()
-        mediaViewController = MediaViewController()
-        inboxViewController = InboxViewController()
-        profileViewController = ProfileViewController()
+        shopViewController = HomeViewController()
+        homeNavigationController = BaseNavigationController(rootViewController: shopViewController)
+        forYouViewController = InboxViewController()
+        cartViewController = ProfileViewController()
      
+        shopViewController.tabBarItem.image = UIImage(named: "iconHomeStoreUnselected")
+        shopViewController.tabBarItem.selectedImage = UIImage(named: "iconHomeStoreSelected")
         
-        homeViewController.tabBarItem.image = UIImage(systemName: "house")
-        homeViewController.tabBarItem.selectedImage = UIImage(systemName: "house.fill")
+        forYouViewController.tabBarItem.image = UIImage(named: "iconAccountUnselected")
+        forYouViewController.tabBarItem.selectedImage = UIImage(named: "iconAccountSelected")
         
-        discoverViewController.tabBarItem.image = UIImage(systemName: "magnifyingglass")
-        discoverViewController.tabBarItem.selectedImage = UIImage(systemName: "magnifyingglass")
+        cartViewController.tabBarItem.image = UIImage(named: "iconCartUnselected")
+        cartViewController.tabBarItem.selectedImage = UIImage(named: "iconCartSelected")
         
-        mediaViewController.tabBarItem.image = UIImage(named: "addMedia")
+        viewControllers = [homeNavigationController, forYouViewController, cartViewController]
         
-        inboxViewController.tabBarItem.image = UIImage(systemName: "text.bubble")
-        inboxViewController.tabBarItem.selectedImage = UIImage(systemName: "text.bubble.fill")
-        
-        profileViewController.tabBarItem.image = UIImage(systemName: "person.crop.circle")
-        profileViewController.tabBarItem.selectedImage = UIImage(systemName: "person.crop.circle.fill")
-        
-        viewControllers = [homeNavigationController, discoverViewController, mediaViewController, inboxViewController, profileViewController]
-        
-        let tabBarItemTitle = ["Home", "Discover", "Add", "Inbox", "Me"]
+        let tabBarItemTitle = ["Store", "For YOU", "Cart"]
         
         for (index, tabBarItem) in tabBar.items!.enumerated() {
             tabBarItem.title = tabBarItemTitle[index]
-            if index == 2 {
-                // Media Button
-                tabBarItem.title = ""
-                tabBarItem.imageInsets = UIEdgeInsets(top: -6, left: 0, bottom: -6, right: 0)
-                
-            }
         }
     }
     
