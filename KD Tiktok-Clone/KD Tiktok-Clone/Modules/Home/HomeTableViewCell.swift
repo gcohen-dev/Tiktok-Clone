@@ -28,7 +28,7 @@ class HomeTableViewCell: UITableViewCell {
         }
     }
     
-    @IBOutlet var imageViewsInspireation: [UIImageView]!
+    @IBOutlet var inspirationViews: [UIVisualEffectView]!
     
     // MARK: - Variables
     private(set) var isPlaying = false
@@ -54,6 +54,10 @@ class HomeTableViewCell: UITableViewCell {
         musicLbl.holdScrolling = true
         musicLbl.animationDelay = 0
         
+        inspirationViews.forEach{
+            $0.clipsToBounds = true
+            $0.layer.cornerRadius = 10
+        }
         
         contentView.addSubview(playerView)
         contentView.sendSubviewToBack(playerView)
@@ -82,12 +86,9 @@ class HomeTableViewCell: UITableViewCell {
     
     func animatePhotos() {
         UIView.animate(withDuration: 0.3, delay: 2.0, options: .curveEaseInOut) { [weak self] in
-            self?.imageViewsInspireation.forEach({ imageView in
-                imageView.image = UIImage(named: "ProfileBackground")
-            })
-            self?.imageViewsInspireation.forEach{ $0.alpha = 1 }
+            self?.inspirationViews.forEach{ $0.alpha = 1 }
         } completion: { _ in
-            
+
         }
     }
     
