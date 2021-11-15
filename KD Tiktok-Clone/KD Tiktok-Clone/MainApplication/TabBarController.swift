@@ -42,8 +42,8 @@ class TabBarController:  UITabBarController, UITabBarControllerDelegate {
         cartViewController.tabBarItem.image = UIImage(named: "iconCartUnselected")
         cartViewController.tabBarItem.selectedImage = UIImage(named: "iconCartSelected")
         
-        viewControllers = [homeNavigationController, forYouViewController, cartViewController]
-        
+        viewControllers = [forYouViewController,homeNavigationController, cartViewController]
+        selectedIndex = 1
         let tabBarItemTitle = ["Store", "For YOU", "Cart"]
         
         for (index, tabBarItem) in tabBar.items!.enumerated() {
