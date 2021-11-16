@@ -15,7 +15,7 @@ class TabBarController:  UITabBarController, UITabBarControllerDelegate {
     var shopViewController: HomeViewController!
     var discoverViewController: DiscoverViewController!
     var mediaViewController: MediaViewController!
-    var forYouViewController: InboxViewController!
+    var forYouViewController: StoreViewController!
     var cartViewController: ProfileViewController!
 
     
@@ -28,12 +28,12 @@ class TabBarController:  UITabBarController, UITabBarControllerDelegate {
         tabBar.isTranslucent = false
         tabBar.tintColor = .orange
         
-        shopViewController = HomeViewController()
-        homeNavigationController = BaseNavigationController(rootViewController: shopViewController)
-        forYouViewController = InboxViewController()
-        cartViewController = ProfileViewController()
+        forYouViewController = StoreViewController()
         discoverViewController = DiscoverViewController()
+        shopViewController = HomeViewController()
+        cartViewController = ProfileViewController()
         mediaViewController = MediaViewController()
+        homeNavigationController = BaseNavigationController(rootViewController: shopViewController)
      
         shopViewController.tabBarItem.image = UIImage(named: "iconUploadUnselected")
         shopViewController.tabBarItem.selectedImage = UIImage(named: "iconUploadSelected")
