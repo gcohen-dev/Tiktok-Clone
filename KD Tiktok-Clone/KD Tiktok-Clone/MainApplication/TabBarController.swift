@@ -32,19 +32,27 @@ class TabBarController:  UITabBarController, UITabBarControllerDelegate {
         homeNavigationController = BaseNavigationController(rootViewController: shopViewController)
         forYouViewController = InboxViewController()
         cartViewController = ProfileViewController()
+        discoverViewController = DiscoverViewController()
+        mediaViewController = MediaViewController()
      
-        shopViewController.tabBarItem.image = UIImage(named: "iconHomeStoreUnselected")
-        shopViewController.tabBarItem.selectedImage = UIImage(named: "iconHomeStoreSelected")
+        shopViewController.tabBarItem.image = UIImage(named: "iconUploadUnselected")
+        shopViewController.tabBarItem.selectedImage = UIImage(named: "iconUploadSelected")
         
-        forYouViewController.tabBarItem.image = UIImage(named: "iconAccountUnselected")
-        forYouViewController.tabBarItem.selectedImage = UIImage(named: "iconAccountSelected")
+        discoverViewController.tabBarItem.image = UIImage(named: "iconPhotosUnselected")
+        discoverViewController.tabBarItem.selectedImage = UIImage(named: "iconPhotosSelected")
+        
+        forYouViewController.tabBarItem.image = UIImage(named: "iconHomeStoreUnselected")
+        forYouViewController.tabBarItem.selectedImage = UIImage(named: "iconHomeStoreSelected")
+        
+        mediaViewController.tabBarItem.image = UIImage(named: "iconAccountUnselected")
+        mediaViewController.tabBarItem.selectedImage = UIImage(named: "iconAccountSelected")
         
         cartViewController.tabBarItem.image = UIImage(named: "iconCartUnselected")
         cartViewController.tabBarItem.selectedImage = UIImage(named: "iconCartSelected")
         
-        viewControllers = [forYouViewController,homeNavigationController, cartViewController]
-        selectedIndex = 1
-        let tabBarItemTitle = ["Store", "For YOU", "Cart"]
+        viewControllers = [forYouViewController, discoverViewController, homeNavigationController, mediaViewController, cartViewController]
+        selectedIndex = 2
+        let tabBarItemTitle = ["Store", "Photos", "For YOU", "Account", "Cart"]
         
         for (index, tabBarItem) in tabBar.items!.enumerated() {
             tabBarItem.title = tabBarItemTitle[index]

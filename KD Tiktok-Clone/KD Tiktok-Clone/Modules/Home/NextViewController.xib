@@ -29,7 +29,7 @@
                     </connections>
                 </button>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sblanket_1" translatesAutoresizingMaskIntoConstraints="NO" id="nth-Jt-mUX">
-                    <rect key="frame" x="0.0" y="123" width="414" height="612"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="762"/>
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -39,7 +39,7 @@
                 <constraint firstItem="nth-Jt-mUX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4sZ-PO-zr0"/>
                 <constraint firstItem="fPz-o1-K0I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Z9-gv-a5j"/>
                 <constraint firstItem="fPz-o1-K0I" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="KvD-nS-z8V"/>
-                <constraint firstItem="nth-Jt-mUX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="79" id="LV7-vP-ADY"/>
+                <constraint firstItem="nth-Jt-mUX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="LV7-vP-ADY"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="fPz-o1-K0I" secondAttribute="bottom" constant="127" id="eOC-9g-Q2w"/>
                 <constraint firstItem="nth-Jt-mUX" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kSo-hi-zE2"/>
             </constraints>
@@ -47,7 +47,7 @@
         </view>
     </objects>
     <resources>
-        <image name="sblanket_1" width="414" height="612"/>
+        <image name="sblanket_1" width="414" height="762"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -12,7 +12,7 @@ class NextViewController: UIViewController {
 
     @IBOutlet weak var imagePlaceHolder: UIImageView!
     var index = 1
-    let images = [UIImage(named: "sblanket_1"), UIImage(named: "sblanket_2"), UIImage(named: "sblanket_3"), UIImage(named: "sblanket_4")]
+    let images = [UIImage(named: "sblanket_1"), UIImage(named: "sblanket_2"), UIImage(named: "sblanket_3")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,7 @@ class NextViewController: UIViewController {
     }
 
     @IBAction func swipeImages(_ sender: UIButton) {
-        let current = index % 4
+        let current = index % 3
         let currentImage = images[current]!
         imagePlaceHolder.image = currentImage
         index += 1

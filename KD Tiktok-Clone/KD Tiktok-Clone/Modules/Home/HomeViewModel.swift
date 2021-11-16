@@ -75,7 +75,7 @@ class HomeViewModel: NSObject {
 //            self.docs.append(post)
 //            self.posts.onNext(self.docs)
 //            self.isLoading.onNext(false)
-            let post1 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video1.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Mug of my life", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
+            let post1 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video1.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Candle of my life", music: "Rap of Candle 3", likeCount: 212, shareCount: 12, commentID: "random")
             
 //            let post2 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video2.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video2", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
             
@@ -83,7 +83,7 @@ class HomeViewModel: NSObject {
             
 //            let post4 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video4.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video4", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
             
-            var post5 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video5.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Dog deserve presents a swell", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
+            var post5 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video5.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video5", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "John", caption: "Dog deserve presents a swell", music: "Rap of John", likeCount: 212, shareCount: 12, commentID: "random")
             let dogImage1 = UIImage(named: "Pet_Placemat-1c")
             let dogImage2 = UIImage(named: "Pet_Placemat-2c")
             let dogImage3 = UIImage(named: "Pet_Placemat-3c")
@@ -91,7 +91,7 @@ class HomeViewModel: NSObject {
             post5.uimage2 = dogImage2
             post5.uimage3 = dogImage3
             
-            var post6 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video6.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
+            var post6 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video6.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video6", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sarah", caption: "My awesome blanket", music: "Pop of Sarah", likeCount: 212, shareCount: 12, commentID: "random")
             
             let a1 = UIImage(named: "Blanket-1")
             let a2 = UIImage(named: "Blanket-2")

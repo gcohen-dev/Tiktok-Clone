@@ -5,12 +5,12 @@
       "scale" : "1x"
     },
     {
-      "filename" : "01. Primary@2x.png",
+      "filename" : "homeStore@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "01. Primary@3x.png",
+      "filename" : "homeStore@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

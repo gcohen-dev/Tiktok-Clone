@@ -70,7 +70,7 @@
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFc-PP-6ib" userLabel="onTap">
                                     <rect key="frame" x="0.0" y="0.0" width="160" height="158"/>
                                     <state key="normal" title="Button"/>
-                                    <buttonConfiguration key="configuration" style="plain"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" "/>
                                     <connections>
                                         <action selector="onTappedAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oLQ-2b-BYV"/>
                                     </connections>
@@ -210,9 +210,9 @@
         </designable>
     </designables>
     <resources>
-        <image name="Blanket-1" width="417" height="500"/>
-        <image name="Blanket-2" width="417" height="500"/>
-        <image name="Blanket-3" width="417" height="500"/>
+        <image name="Blanket-1" width="416" height="498"/>
+        <image name="Blanket-2" width="416" height="493"/>
+        <image name="Blanket-3" width="416" height="498"/>
         <image name="music.note" catalog="system" width="97" height="128"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
     </resources>
