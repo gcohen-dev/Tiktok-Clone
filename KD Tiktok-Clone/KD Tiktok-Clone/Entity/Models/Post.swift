@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import AVFoundation
 
+
 struct Post: Codable{
     var id: String
     var video: String
@@ -24,7 +25,9 @@ struct Post: Codable{
     var likeCount: Int
     var shareCount: Int
     var commentID: String
-    
+    var uimage1: UIImage?
+    var uimage2: UIImage?
+    var uimage3: UIImage?
     
     enum CodingKeys: String, CodingKey {
         case id

@@ -27,7 +27,15 @@ class HomeTableViewCell: UITableViewCell {
             pauseImgView.alpha = 0
         }
     }
+    @IBOutlet weak var secondImage: UIImageView!
     
+    @IBOutlet weak var thirdImage: UIImageView!
+    @IBOutlet weak var firstImage: UIImageView!
+    var onTapped: () -> () = { }
+    
+    @IBAction func onTappedAction(_ sender: UIButton) {
+        onTapped()
+    }
     @IBOutlet var inspirationViews: [UIVisualEffectView]!
     
     // MARK: - Variables
@@ -86,7 +94,16 @@ class HomeTableViewCell: UITableViewCell {
     
     func animatePhotos() {
         UIView.animate(withDuration: 0.3, delay: 2.0, options: .curveEaseInOut) { [weak self] in
-            self?.inspirationViews.forEach{ $0.alpha = 1 }
+            guard let self = self, let post = self.post else {
+                return
+            }
+            guard let firstImageExist = post.uimage1 else{
+                 return
+            }
+            self.firstImage.image = firstImageExist
+            self.secondImage.image = post.uimage2!
+            self.thirdImage.image = post.uimage3!
+            self.inspirationViews.forEach{ $0.alpha = 1 }
         } completion: { _ in
 
         }
@@ -194,8 +211,6 @@ class HomeTableViewCell: UITableViewCell {
         guard let post = post else { return }
         delegate?.navigateToProfilePage(uid: post.autherName, name: post.autherID)
     }
-    
-    
     
     
 }

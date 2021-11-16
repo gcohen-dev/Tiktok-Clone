@@ -82,6 +82,8 @@ class HomeViewController: BaseViewController {
         mainTableView.delegate = self
         mainTableView.dataSource = self
         mainTableView.prefetchDataSource = self
+        
+        
     }
 
     /// Set up Binding
@@ -142,6 +144,11 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource, UITabl
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! HomeTableViewCell
         cell.configure(post: data[indexPath.row])
         cell.delegate = self
+        cell.onTapped = {
+            let nextViewController = NextViewController.initWithNib()
+            self.navigationController?.pushViewController(nextViewController, animated: true)
+            cell.pause()
+        }
         return cell
     }
     
@@ -191,5 +198,12 @@ extension HomeViewController: UIScrollViewDelegate {
 extension HomeViewController: HomeCellNavigationDelegate {
     func navigateToProfilePage(uid: String, name: String) {
         self.navigationController?.pushViewController(ProfileViewController(), animated: true)
+    }
+}
+
+public extension UIViewController {
+    
+    static func initWithNib() -> Self {
+        return self.init(nibName: String(describing: self), bundle: Bundle(for: self))
     }
 }

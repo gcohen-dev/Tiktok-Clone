@@ -67,13 +67,25 @@
                                     <color key="textColor" red="0.94117647059999998" green="0.32549019610000002" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFc-PP-6ib" userLabel="onTap">
+                                    <rect key="frame" x="0.0" y="0.0" width="160" height="158"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain"/>
+                                    <connections>
+                                        <action selector="onTappedAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oLQ-2b-BYV"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="fw5-Ps-IUS" firstAttribute="centerX" secondItem="36U-nr-5po" secondAttribute="centerX" id="Cpi-yO-kKA"/>
+                                <constraint firstItem="fw5-Ps-IUS" firstAttribute="top" secondItem="GFc-PP-6ib" secondAttribute="bottom" id="FN7-cP-19q"/>
                                 <constraint firstAttribute="trailing" secondItem="5zP-aP-MYl" secondAttribute="trailing" constant="8" id="OGj-7j-iE1"/>
+                                <constraint firstItem="GFc-PP-6ib" firstAttribute="top" secondItem="36U-nr-5po" secondAttribute="top" id="P25-qj-p4m"/>
+                                <constraint firstItem="GFc-PP-6ib" firstAttribute="leading" secondItem="36U-nr-5po" secondAttribute="leading" id="ZkN-nh-WKh"/>
                                 <constraint firstItem="fw5-Ps-IUS" firstAttribute="top" secondItem="5zP-aP-MYl" secondAttribute="bottom" constant="22" id="n21-Zp-sQX"/>
                                 <constraint firstItem="5zP-aP-MYl" firstAttribute="top" secondItem="36U-nr-5po" secondAttribute="top" constant="8" id="slc-Ma-Kt4"/>
                                 <constraint firstItem="5zP-aP-MYl" firstAttribute="leading" secondItem="36U-nr-5po" secondAttribute="leading" constant="8" id="tRk-6y-fTy"/>
+                                <constraint firstAttribute="trailing" secondItem="GFc-PP-6ib" secondAttribute="trailing" id="tny-qN-YuD"/>
                                 <constraint firstAttribute="bottom" secondItem="fw5-Ps-IUS" secondAttribute="bottom" constant="19" id="xGo-r9-zLI"/>
                             </constraints>
                         </view>
@@ -179,9 +191,12 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="captionLbl" destination="E3x-M7-4ED" id="cj7-mb-jGE"/>
+                <outlet property="firstImage" destination="5zP-aP-MYl" id="f4H-tM-pbp"/>
                 <outlet property="musicLbl" destination="5rH-8G-wud" id="fRr-JH-Mqo"/>
                 <outlet property="nameBtn" destination="yHt-3I-Ag1" id="cnP-NX-DoW"/>
                 <outlet property="pauseImgView" destination="Vib-MS-CJW" id="5h1-9h-bTX"/>
+                <outlet property="secondImage" destination="fGT-Vl-Mmu" id="eTw-OQ-8ZT"/>
+                <outlet property="thirdImage" destination="F3l-p0-cmV" id="izi-3K-WCG"/>
                 <outletCollection property="inspirationViews" destination="2ew-6z-3hk" collectionClass="NSMutableArray" id="ddO-bm-HdM"/>
                 <outletCollection property="inspirationViews" destination="RPj-36-HpU" collectionClass="NSMutableArray" id="FlC-ax-2Vw"/>
                 <outletCollection property="inspirationViews" destination="efx-ra-dMZ" collectionClass="NSMutableArray" id="7mZ-0c-gIM"/>
