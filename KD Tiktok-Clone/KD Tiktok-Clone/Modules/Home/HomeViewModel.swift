@@ -75,7 +75,7 @@ class HomeViewModel: NSObject {
 //            self.docs.append(post)
 //            self.posts.onNext(self.docs)
 //            self.isLoading.onNext(false)
-            let post1 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video1.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Candle of my life", music: "Rap of Candle 3", likeCount: 212, shareCount: 12, commentID: "random")
+//            let post1 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video1.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video1", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Candle of my life", music: "Rap of Candle 3", likeCount: 212, shareCount: 12, commentID: "random")
             
 //            let post2 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video2.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video2", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
             
@@ -103,7 +103,7 @@ class HomeViewModel: NSObject {
             
 //            let post7 = Post(id: "Q5Edo8Vsob5NbyQ51nDr", video: "video7.mp4", videoURL: URL(fileURLWithPath: Bundle.main.path(forResource: "video7", ofType:"mp4")!), videoFileExtension: "mp4", videoHeight: 1920, videoWidth: 1080, autherID: "n96kixJqddGqZpMqL8t8", autherName: "Sam", caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", music: "Rap of China 3", likeCount: 212, shareCount: 12, commentID: "random")
     //        let posts: [Post] = [post1]
-            self.docs.append(post1)
+//            self.docs.append(post1)
 //            self.docs.append(post2)
 //            self.docs.append(post3)
 //            self.docs.append(post4)

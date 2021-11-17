@@ -93,7 +93,10 @@ class HomeTableViewCell: UITableViewCell {
     }
     
     func animatePhotos() {
-        UIView.animate(withDuration: 0.3, delay: 2.0, options: .curveEaseInOut) { [weak self] in
+        
+        self.inspirationViews.forEach{ $0.alpha = 0 }
+        
+        UIView.animate(withDuration: 0.3, delay: 13.0, options: .curveEaseInOut) { [weak self] in
             guard let self = self, let post = self.post else {
                 return
             }
